@@ -87,7 +87,7 @@ Im Rahmen des ankerfreien Mechanismus von FCOS stellt die folgende Formel die Ba
 Das bedeutet, dass anstatt feste Ankerboxen zu verwenden, die Bounding Box durch die Berechnung dieser Distanzen relativ zu einem Punkt auf dem Grid bestimmt wird \cite{tian2019fcos, wang2018anchor}.
 
 \subsection{Loss Calculation}
-Die zwei Teile, aus denen der Verlustberechnungsprozess besteht, sind die Stichprobenzuweisungsstrategie und die Verlustberechnung. In modernen Detektoren werden dynamische Stichprobenzuweisungsstrategien wie simOTA von YOLOX, TaskAlignedAssigner von TOOD und DynamicSoftLAvelAssigner von RTMDet verwendet. Der YOLOv8-Algorithmus integriert die in TaskAlignedAssigner von TOOD verwendete Strategie direkt \cite{openmmlab2023dive}.
+Die zwei Teile, aus denen der Verlustberechnungsprozess besteht, sind die Stichprobenzuweisungsstrategie und die Verlustberechnung. In modernen Detektoren werden dynamische Stichprobenzuweisungsstrategien wie simOTA von YOLOX, TaskAlignedAssigner von TOOD und DynamicSoftLAvelAssigner von RTMDet verwendet. Der YOLOv8-Algorithmus integriert die in TaskAlignedAssigner von TOOD verwendete Strategie direkt \cite{yolov8_architecture}.
 
 \noindent Zusammengefasst kann die Matching-Strategie von TaskAlignedAssigner mit einfachen Termen beschrieben werden. Die positiven Stichproben werden basierend auf den gewichteten Bewertungen von Klassifizierung und Regression ausgewählt.
 
@@ -124,11 +124,22 @@ YOLOv8 besteht aus einer strukturierten Reihe von Convolutional Neural Networks 
 \end{figure}
 \FloatBarrier
 
-\noindent Der meistgenutzte Block ist der Convolutional Block. Dieser besteht aus 2D-Convolutional Layer, 2D-Batch Normalization und einer SiLU-Aktivierungsfunktion. 
-
 \noindent Die Tabelle in der Abbildung [Nils muss hier die Nummer der Abbildung einfügen] enthält Modellgröße, -tiefe, -breite und -verhältnis. Es lässt sich bemerken, dass die Tiefe des Modells bei höheren Modellgrößen steigt. Dies gilt ebenfalls für die Tiefe. Jedoch sinkt das Skalierungsverhältnis bei steigenden Modellgrößen, da größere Modelle bereits höhere Tiefe- und Breitewerte haben und somit von Natur aus tiefer und breiter sind. Zusätzliche Skalierung könnte zu hohem Rechenaufwand führen \cite{terven2023comprehensive}.
 
-\noindent 
+
+\noindent Die Werte in der Tabelle (bis auf die Skalierungsverhältnisse) orientieren sich an den Werten, die in der Kongigurationsdatei "yolov8.yaml" festgelegt sind. Dort sind ebenfalls die einzelnen Blöcke nummeriert zu sehen. Und Neck wird im Head integriert. Das Bild der Architektur dient der Vereinfachung. Für das Trainieren des Modells wird in dieser Hausarbeit die Modellgröße $n$ verwendet \cite{ultralytics_yolov8}. %interne Verlinkung auf Nils Begründung, warum.
+
+\noindent Der meistgenutzte Block ist der Convolutional Block. Dieser besteht aus 2D-Convolutional Layer, 2D-Batch Normalization und einer SiLU-Aktivierungsfunktion. 
+
+\noindent Ein Eingabebild wird zu Beginn durch zwei Convolutional Blöcken bearbeitet. Es wird durch diese Blöcke anhand der fesgelegten Kernel-, Strike- und Paddinggröße verkleinert. %interne Verlinkung auf Nils, CNN Funktionsweise.
+
+\noindent Anstatt von traditionellen Feature Pyramid Networks (FPNs) verwendet YOLOv8 ein neuartiges C2f-Modul, das semantische Merkmale auf hoher Ebene mit räumlichen Informationen auf niedrige Ebene kombiniert. Dies ermöglicht eine effizientere und präzisere Objekterkennung vor allem bei kleinen Objekten \cite{yolov8_architecture}.
+\noindent Bottelnecks im CSPDarknet53-Backbone werden für die Reduzierung der Rechenkomplexität ohne Verlust der Genauigkeit genutzt.
+\noindent Spatial Pyramid Pooling Fast (SPPF) erfasst Merkmale auf meheren Skalen und verbessert die Erkennungsleistung weiter.
+\noindent Das Upsample-Layer erhöht die Auflösung der Feature-Maps und das Concat-Layer komibiniert dann die Feature-Maps \cite{terven2023comprehensive}.
+\noindent Das Detection Head verwendet eine modifizierte Version des YOLO-Heads, die eine dynamische Ankerzuweisung und eine neuartige IoU-Verlustfunktion (Intersection over Union) enthält \cite{yolov8_architecture}. %interne Verlinkung auf passende Stellen im mathematischen Hintergrund.
+
+% https://cs231n.github.io/convolutional-networks/ Quelle für die Erklärung der Convolutional Layer (Falls nils doch kein bock hat)
 
 \FloatBarrier
 
