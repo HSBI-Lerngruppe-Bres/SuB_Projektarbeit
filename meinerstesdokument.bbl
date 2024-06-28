@@ -1,0 +1,310 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{terven2023comprehensive}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=2d98144b1d3414371593a7c972d0e740}{%
+           family={Terven},
+           familyi={T\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=506e41a8c16030d8fecebc39c29fe967}{%
+           family={Córdova-Esparza},
+           familyi={C\bibinithyphendelim E\bibinitperiod},
+           given={D.-M.},
+           giveni={D\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=e2a3982c54a7e45a7e582db8d17a5d4e}{%
+           family={Romero-González},
+           familyi={R\bibinithyphendelim G\bibinitperiod},
+           given={J.-A.},
+           giveni={J\bibinithyphendelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0838d25f332c4303b1103f577b2a940b}
+      \strng{fullhash}{9cb87a6a98f0144c7c99697188b4177b}
+      \strng{fullhashraw}{9cb87a6a98f0144c7c99697188b4177b}
+      \strng{bibnamehash}{9cb87a6a98f0144c7c99697188b4177b}
+      \strng{authorbibnamehash}{9cb87a6a98f0144c7c99697188b4177b}
+      \strng{authornamehash}{0838d25f332c4303b1103f577b2a940b}
+      \strng{authorfullhash}{9cb87a6a98f0144c7c99697188b4177b}
+      \strng{authorfullhashraw}{9cb87a6a98f0144c7c99697188b4177b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mach Learn Knowl Extr}
+      \field{number}{4}
+      \field{title}{A Comprehensive Review of YOLO Architectures in Computer Vision: From YOLOv1 to YOLOv8 and YOLO-NAS}
+      \field{volume}{5}
+      \field{year}{2023}
+      \field{pages}{1680\bibrangedash 1716}
+      \range{pages}{37}
+      \verb{doi}
+      \verb 10.3390/make5040083
+      \endverb
+    \endentry
+    \entry{reis2023real}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=1f366ba3ec16d0bb2065630ebe3f204d}{%
+           family={Reis},
+           familyi={R\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8720264d8986fcf9b8c57250dd2fc833}{%
+           family={Kupec},
+           familyi={K\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4d9d44918fd3389c5579c8a660aeff77}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bed23956ce794fdcfa27bd3790b7f607}{%
+           family={Daoudi},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7491fbf5654bb4aeda9a4b3fd6bc195c}
+      \strng{fullhash}{b1494d00801ac2df0b924da4b19d9e81}
+      \strng{fullhashraw}{b1494d00801ac2df0b924da4b19d9e81}
+      \strng{bibnamehash}{b1494d00801ac2df0b924da4b19d9e81}
+      \strng{authorbibnamehash}{b1494d00801ac2df0b924da4b19d9e81}
+      \strng{authornamehash}{7491fbf5654bb4aeda9a4b3fd6bc195c}
+      \strng{authorfullhash}{b1494d00801ac2df0b924da4b19d9e81}
+      \strng{authorfullhashraw}{b1494d00801ac2df0b924da4b19d9e81}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{note}{Accessed: 8 June 2024. [Online]. Available: https://arxiv.org/pdf/2305.09972}
+      \field{title}{Real-Time Flying Object Detection with YOLOv8}
+      \field{year}{2023}
+    \endentry
+    \entry{safaldin2024improved}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=1553ce2dccfe457940a299e1a87ee393}{%
+           family={Safaldin},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b3c0171236f1953e0a68126326f3bde4}{%
+           family={Zaghden},
+           familyi={Z\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=70d8af9c1a0e806d8ea7717a89641bce}{%
+           family={Mejdoub},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{37ba8dbe85f8863e1b651404372fa391}
+      \strng{fullhash}{f973827ab9c5caf29803b64e5db1f524}
+      \strng{fullhashraw}{f973827ab9c5caf29803b64e5db1f524}
+      \strng{bibnamehash}{f973827ab9c5caf29803b64e5db1f524}
+      \strng{authorbibnamehash}{f973827ab9c5caf29803b64e5db1f524}
+      \strng{authornamehash}{37ba8dbe85f8863e1b651404372fa391}
+      \strng{authorfullhash}{f973827ab9c5caf29803b64e5db1f524}
+      \strng{authorfullhashraw}{f973827ab9c5caf29803b64e5db1f524}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{An Improved YOLOv8 to Detect Moving Objects}
+      \field{volume}{12}
+      \field{year}{2024}
+      \field{pages}{59782\bibrangedash 59806}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2024.3393835
+      \endverb
+    \endentry
+    \entry{han2023improving}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=ef0906ca4e32e497e6e51a1517cc383f}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3a724c89777c97278c32b84f7bfdc341}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ca5d8c01ece6364a02e9fe2849da33ed}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5ecc04ab7cd8350e63b66dc42451fa3e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=61ad10c626e1d641e0b1d7b5f48d3233}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=26a65a094e8ce28de9dfa5f5ee9d97e7}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{b161766bdab3ae0a3fa72dd3282d45b6}
+      \strng{fullhash}{1049e0ae32248ee4dceb712e9bd36201}
+      \strng{fullhashraw}{1049e0ae32248ee4dceb712e9bd36201}
+      \strng{bibnamehash}{1049e0ae32248ee4dceb712e9bd36201}
+      \strng{authorbibnamehash}{1049e0ae32248ee4dceb712e9bd36201}
+      \strng{authornamehash}{b161766bdab3ae0a3fa72dd3282d45b6}
+      \strng{authorfullhash}{1049e0ae32248ee4dceb712e9bd36201}
+      \strng{authorfullhashraw}{1049e0ae32248ee4dceb712e9bd36201}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronics (Basel)}
+      \field{month}{10}
+      \field{number}{20}
+      \field{title}{Improving the Detection and Positioning of Camouflaged Objects in YOLOv8}
+      \field{volume}{12}
+      \field{year}{2023}
+      \field{pages}{4213}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/electronics12204213
+      \endverb
+    \endentry
+    \entry{tian2019fcos}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=35a14c9b50b3afe50d1e0529be28e3dd}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=f91461ec7d03471cb984bf0ae5239045}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=83702ad2b0cc9ef7ee381daa5f80b7f0}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=abc3c43354d63c8aa5e83069a692af21}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2999cff400286acc08ca9eea0bd248b0}
+      \strng{fullhash}{bc89c4d91485578dccbd5c739b23c4fa}
+      \strng{fullhashraw}{bc89c4d91485578dccbd5c739b23c4fa}
+      \strng{bibnamehash}{bc89c4d91485578dccbd5c739b23c4fa}
+      \strng{authorbibnamehash}{bc89c4d91485578dccbd5c739b23c4fa}
+      \strng{authornamehash}{2999cff400286acc08ca9eea0bd248b0}
+      \strng{authorfullhash}{bc89c4d91485578dccbd5c739b23c4fa}
+      \strng{authorfullhashraw}{bc89c4d91485578dccbd5c739b23c4fa}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{FCOS: Fully Convolutional One-Stage Object Detection}
+      \field{year}{2019}
+    \endentry
+    \entry{wang2018anchor}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=466ce84bc5093e2ec73b823c573ad026}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7b4f211f71a2cad23c6e44230aaf36ea}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=dfac8b130424b7f072426937a13cc893}{%
+           family={Lian},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0ee6724aae227dcac2949962d898b300}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{caea4315ae6c5a830fe17ea8a86ffdbc}
+      \strng{fullhash}{5e3128824db1e36b21e4d200302feb85}
+      \strng{fullhashraw}{5e3128824db1e36b21e4d200302feb85}
+      \strng{bibnamehash}{5e3128824db1e36b21e4d200302feb85}
+      \strng{authorbibnamehash}{5e3128824db1e36b21e4d200302feb85}
+      \strng{authornamehash}{caea4315ae6c5a830fe17ea8a86ffdbc}
+      \strng{authorfullhash}{5e3128824db1e36b21e4d200302feb85}
+      \strng{authorfullhashraw}{5e3128824db1e36b21e4d200302feb85}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 24th International Conference on Pattern Recognition (ICPR)}
+      \field{month}{8}
+      \field{title}{Anchor Free Network for Multi-Scale Face Detection}
+      \field{year}{2018}
+      \field{pages}{1554\bibrangedash 1559}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICPR.2018.8545814
+      \endverb
+    \endentry
+    \entry{openmmlab2023dive}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=3147a1bebbfbb364d596d1026b3a9439}{%
+           family={OpenMMLab},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{3147a1bebbfbb364d596d1026b3a9439}
+      \strng{fullhash}{3147a1bebbfbb364d596d1026b3a9439}
+      \strng{fullhashraw}{3147a1bebbfbb364d596d1026b3a9439}
+      \strng{bibnamehash}{3147a1bebbfbb364d596d1026b3a9439}
+      \strng{authorbibnamehash}{3147a1bebbfbb364d596d1026b3a9439}
+      \strng{authornamehash}{3147a1bebbfbb364d596d1026b3a9439}
+      \strng{authorfullhash}{3147a1bebbfbb364d596d1026b3a9439}
+      \strng{authorfullhashraw}{3147a1bebbfbb364d596d1026b3a9439}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://openmmlab.medium.com/dive-into-yolov8-how-does-this-state-of-the-art-model-work-10f18f74bab1}}
+      \field{month}{1}
+      \field{title}{Dive into YOLOv8: How does this state-of-the-art model work?}
+      \field{year}{2023}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

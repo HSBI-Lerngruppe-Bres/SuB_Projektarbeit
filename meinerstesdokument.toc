@@ -1,0 +1,8 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Aufbau und Funktionsweise des Algorithmus}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}YOLOv8 und frühere Versionen}{1}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Mathematischer Hintergrund / Mechanismen im Hintergrund}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Non-Maximum Suppression}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Anchor-Free Strategies}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Loss Calculation}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Architektur von YOLOv8}{5}{section.3}%
