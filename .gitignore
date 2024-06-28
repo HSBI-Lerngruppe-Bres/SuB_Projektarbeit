@@ -1,0 +1,29 @@
+# Ignoriere Bilddateien
+*.png
+
+# Ignoriere LaTeX-Hilfsdateien
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# Ignoriere PDF-Dateien
+*.pdf
+
+# Ignoriere temporäre und Backup-Dateien
+*~
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Ignoriere Systemdateien (optional)
+.DS_Store
+Thumbs.db
