@@ -35,7 +35,7 @@ Die Verbesserungen in YOLOv8 im Vergleich zu früheren Versionen beziehen sich a
 \noindent Der Loss Function misst die Differenz zwischen den vorhergesagten Ausgaben des Modells und die tatsächlichen Labels in den Trainingsdaten und versucht diese zu minimieren. In YOLOv8 wurde dieser verbessert mit dem Ziel eine höhere Genauigkeit von Objekten zu erreichen \cite{terven2023comprehensive, reis2023real, safaldin2024improved}.\par\vspace{0.5em}
 
 
-\section{Mathematischer Hintergrund / Mechanismen im Hintergrund}
+\subsection{Mathematischer Hintergrund / Mechanismen im Hintergrund}
 \subsection{Non-Maximum Suppression}
 
 \noindent In YOLOv8 kommt der Efficient-IoU in Einsatz, wenn es um das Behandeln von Bounding Boxes geht. Und es wurde eine weiche Strategie aus Soft-NMS angenommen, um die Confidence Scores der überlappenden Boxes zu verringern, anstatt sie zu verwerfen. Denn dieser Einsatz ermöglicht die Erhaltung von mehr Bounding Boxes, die überlappende Objekte enthalten. Des Weiteren wird der verbesserte Algorithmus zur Vereinfachung als E-Soft-NMS bezeichnet.
@@ -97,7 +97,7 @@ t = s^\alpha \times u^\beta,
 \noindent Es werden für jede Ground Truth die größten Top-k-Samples direkt auf der Grundlage der Alignment\_metrics-Werte als positiv ausgewählt. Die Verlustberechnung besteht aus der Klassifizierung und der Regression, ohne den „Objectness Loss“ im vorherigen Modell \cite{openmmlab2023dive}.
 
 
-\section{Architektur von YOLOv8}
+\subsection{Architektur von YOLOv8}
 YOLOv8 besteht aus einer strukturierten Reihe von Convolutional Neural Networks (CNNs) mit den die Lokalisierung und Klassifizierung von Objekten ermöglicht wird. Die Hauptkomponente der Architektur sind Backbone, Neck und Head.
 
 
