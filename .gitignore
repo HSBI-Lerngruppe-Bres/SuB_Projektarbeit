@@ -10,6 +10,8 @@
 *.run.xml
 *.synctex.gz
 *.toc
+*.bbl-SAVE-ERROR
+*.bcf-SAVE-ERROR
 
 # Ignoriere temporäre und Backup-Dateien
 *~
