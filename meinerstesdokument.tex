@@ -42,44 +42,39 @@ Die Verbesserungen in YOLOv8 im Vergleich zu früheren Versionen beziehen sich a
 
 \noindent Der E-Soft-NMS wird wie folgt berechnet:
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{Bild1.png}
-    \caption{E-Soft-NMS Formel}
-    \label{fig:bild1}
-\end{figure}
+\begin{equation}
+    s_i = 
+    \begin{cases} 
+    s_i, & \text{EIoU}(M, b_i) < t \\
+    s_i e^{-\frac{\text{EIoU}(M, b_i)^2}{\sigma}}, & \text{EIoU}(M, b_i) \geq t
+    \end{cases}
+    \end{equation}
 
 \noindent $S_i$ steht für den Confidence Score. $M$ für die Box mit maximalem Confidence Score. $b_i$ steht für die andere Bounding Box und $t$ ist der Schwellenwert. Überschreitet der $EIoU$-Wert zwischen $b_i$ und $M$ den Schwellenwert, soll die Punktzahl von $b_i$ mit der Abnahmefunktion multipliziert werden. Wenn nur der Confidence Score gesenkt wird, können redundante Boxes, die dasselbe Ziel vorhersagen, vorhanden sein. Um ihre Entfernung zu verhindern, wird eine Gaußsche Abnahmefunktion verwendet, die mit $EIoU$ zusammenhängt. Detektionsrahmen, die weit von $M$ entfernt sind, sind nicht betroffen, während solche, die sich nahe bei $M$ befinden, stärker bestraft werden. Somit werden Boxes, die unterschiedliche Ziele vorhersagen, erhalten bleiben, redundante Rahmen, die dasselbe Ziel vorhersagen, jedoch entfernt.
 
 \noindent Die Formel für die Gaußsche Abnahmefunktion lautet:
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.3\textwidth, height=\textheight, keepaspectratio]{Bild2.png}
-    \caption{Gaußsche Abnahmefunktion}
-    \label{fig:bild2}
-\end{figure}
+\[
+e^{-\frac{\text{EIoU}(M, b_i)^2}{\sigma}}
+\]
 
 \noindent Und für die EIoU-Berechnung:
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth, height=\textheight, keepaspectratio]{Bild3.png}
-    \caption{EIoU-Berechnung}
-    \label{fig:bild3}
-\end{figure}
+\[
+\text{EIoU} = 1 - \text{IoU} + \frac{\rho^2(o, o^*)}{c^2} + \frac{\rho^2(w, w^*)}{C_w^2} + \frac{\rho^2(h, h^*)}{C_h^2}
+\]
 
 \noindent Wobei $\mathbf{o}$ für das Zentrum von $b_i$, $o^*$ für das Zentrum von $M$, $p$ für den euklidischen Abstand zwischen $\mathbf{o}$ und $o^*$ stehen. $w$ und $w^*$ in die Breiten von $b_i$ und $M$. $h$ und $h^*$ sind die Höhen von $b_i$ und $M$. $c$ ist die diagonale Länge der minimalen Box $B$, der $b_i$ und $M$ umschließt. Die Breite und Höhe $B$ sind $C_w$ und $C_h$ \cite{han2023improving}.
 
 \subsection{Anchor-Free Strategies}
 Im Rahmen des ankerfreien Mechanismus von FCOS stellt die folgende Formel die Basis dar, da sie Abstände eines Rasterpunkts zu den Rändern der Bounding Box beschreibt, was eine präzise und flexible Objekterkennung ermöglicht, ohne auf vordefinierte Ankerboxen angewiesen zu sein \cite{tian2019fcos, wang2018anchor}.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.6\textwidth, height=\textheight, keepaspectratio]{Bild4.png}
-    \caption{Anchor-Free Strategies}
-    \label{fig:bild4}
-\end{figure}
+\[
+\begin{aligned}
+l^* &= x - x_0^{(i)}, & \quad t^* &= y - y_0^{(i)}, \\
+r^* &= x_1^{(i)} - x, & \quad b^* &= y_1^{(i)} - y.
+\end{aligned}
+\]
 
 
 
@@ -91,12 +86,9 @@ Die zwei Teile, aus denen der Verlustberechnungsprozess besteht, sind die Stichp
 
 \noindent Zusammengefasst kann die Matching-Strategie von TaskAlignedAssigner mit einfachen Termen beschrieben werden. Die positiven Stichproben werden basierend auf den gewichteten Bewertungen von Klassifizierung und Regression ausgewählt.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.3\textwidth]{Bild5.png}
-    \caption{Loss Calculation}
-    \label{fig:bild5}
-\end{figure}
+\[
+t = s^\alpha \times u^\beta,
+\]
 
 \noindent wobei $s$ die Vorhersagebewertung ist, die der Ground-Truth-Kategorie entspricht. $u$ ist die Intersection Over Union (IoU) des Vorhersage-Bounding Boxes und des Ground Truth (gt)-Bounding Boxes.
 
